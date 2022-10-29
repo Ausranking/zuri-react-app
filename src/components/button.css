@@ -1,0 +1,30 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  padding: 24px 32px;
+  width: 100%;
+  margin: 24px auto;
+  border-radius: 8px;
+  background: #eaecf0;
+  text-decoration: none;
+  font-family: var(--default-font);
+  font-weight: 500;
+  color: #101828;
+}
+
+.btn:hover {
+  background: #d0d5dd;
+}
+
+@media screen and (min-width: 1025px) {
+  .btn {
+    width: 1152px;
+  }
+}
+
+@media screen and (width: 1024px) {
+  .btn,
+  footer {
+    width: 1000px;
+  }
+}

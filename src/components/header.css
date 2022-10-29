@@ -1,0 +1,61 @@
+.profile-section {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+}
+
+#profile-img {
+  position: relative;
+  display: inline-block;
+}
+
+#profile_img_two {
+  position: absolute;
+  top: 0;
+}
+
+#profile-img:hover #profile_img_two {
+  display: block;
+}
+
+.icon #web-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 348px;
+  top: 40px;
+}
+
+.icon #mob-icon {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 10px;
+  top: 40px;
+}
+
+@media screen and (max-width: 991px) {
+  .icon #mob-icon {
+    display: block;
+  }
+
+  .icon #web-icon {
+    display: none;
+  }
+}
+
+h1 {
+  text-align: center;
+  max-width: 1152px;
+  margin-top: 24px;
+  font-size: 20px;
+  color: #101828;
+  font-weight: 700;
+  font-family: var(--default-font);
+}
