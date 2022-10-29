@@ -32,7 +32,7 @@ function App() {
           text="Design Books"
           link="https://books.zuri.team/design-rules"
           id="book_design"
-          // title="This is where you get all coding and design related books to help your coding journey"
+          // subtitle="This is where you get all coding and design related books to help your coding journey"
         />
         <div className="social_links">
           <a href="https://slack.com/austin nze">

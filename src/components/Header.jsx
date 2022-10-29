@@ -1,6 +1,6 @@
 import React from 'react'
 import "./header.css"
-const header = () => {
+const Header = () => {
   return (
     <header className="profile-section">
       <div class="icon">
@@ -19,4 +19,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header
