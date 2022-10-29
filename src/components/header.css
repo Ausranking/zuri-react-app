@@ -8,27 +8,11 @@
   align-items: center;
   margin-top: 64px;
 }
-
-#profile-img {
-  
-  position: relative;
-  display: inline-block;
-}
-#profile_img_one {
+#profile_img {
   width: 88px;
   height: 88px;
   border-radius: 275px;
 }
-
-#profile_img_two {
-  position: absolute;
-  top: 0;
-}
-
-#profile-img:hover #profile_img_two {
-  display: block;
-}
-
 .icon #web-icon {
   position: absolute;
   width: 40px;
@@ -36,7 +20,6 @@
   right: 348px;
   top: 40px;
 }
-
 .icon #mob-icon {
   display: none;
   position: absolute;
