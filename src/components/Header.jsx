@@ -9,7 +9,7 @@ const header = () => {
       </div>
 
       <div id="profile-img">
-        <img src="images/Device=Web, State=Default.png" id="profile_img_one" alt="Profile" />
+        <img src="images/IMG_20220327_131117_728 (2).jpg" id="profile_img_one" alt="Profile" />
         <img src="images/Device=Web, State=Hover.png" id="profile_img_two" hidden alt="profile" />
       </div>
       <h1 id="twitter">King Austin</h1>
