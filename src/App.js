@@ -20,7 +20,7 @@ function App() {
         <Button text="Zuri Books" link="https://books.zuri.team/" id="books" />
         <Button
           text="Python Books"
-          link="https://books.zuri.team/python-for-beginners? ref_id=Austin Nze"
+          link="https://books.zuri.team/python-for-beginners?ref_id=Austin"
           id="book_python"
         />
         <Button
