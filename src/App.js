@@ -1,7 +1,8 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./app.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
+import Error from "./components/404";
 
 function App() {
   return (
@@ -11,11 +12,13 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-        </Switch>
-        <Switch>
 
           <Route path="/contact">
             <Contact />
+          </Route>
+
+          <Route path="*">
+            <Error />
           </Route>
         </Switch>
       </div>

@@ -36,12 +36,10 @@
   .container {
     width: 100%;
   }
-
   .btn {
     max-width: 700px;
     margin: auto;
   }
-
   footer {
     max-width: 760px;
     height: 196px;
@@ -51,33 +49,42 @@
   }
 
 }
-
 /* for ipads */
-@media (min-width: 767px) and (max-width:1024px) {
+@media (min-width: 768px) and (max-width:820px) {
+  .container {
+    max-width: 90%;
+    width: 750px;
+    margin: auto;
+  }
+
+  footer {
+    border: 1px solid black;
+    max-width: 100%;
+    width: 750px;
+    margin: auto;
+  }
+}
+/* for small screen laptops */
+@media (width:1024px) {
   .container {
     width: 100%;
   }
-
   .btn {
     max-width: 1000px;
   }
-
   footer {
     max-width: 1000px;
   }
 }
-
 
 /* for small screen devices */
 @media (max-width: 480px) {
   .container {
     width: 100%;
   }
-
   .btn {
     max-width: 343px;
   }
-
   footer {
     margin-left: 10px;
     max-width: 343px;
@@ -87,21 +94,17 @@
     align-items: flex-start;
   }
 }
-
 /* For smaller screen devices like iphone 4  */
 @media (max-width: 320px) {
   .container {
     max-width: 350px;
   }
-
   .profile-section {
     width: 100%;
   }
-
   footer {
     max-width: 300px;
   }
-
   .btn {
     max-width: 300px;
   }

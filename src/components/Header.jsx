@@ -1,19 +1,30 @@
-import React from 'react'
-import "./header.css"
+import React from "react";
+import "./header.css";
 const Header = () => {
   return (
     <header className="profile-section">
       <div className="icon">
-        <img src="images/_Avatar share button.png" id="web-icon" alt="desktop share button" />
-        <img src="images/share-button.png" id="mob-icon" alt="mobile share button" />
+        <img
+          src="images/_Avatar share button.png"
+          id="web-icon"
+          alt="desktop share button"
+        />
+        <img
+          src="images/share-button.png"
+          id="mob-icon"
+          alt="mobile share button"
+        />
       </div>
-      <img src="images/IMG_20220327_131117_728 (2).jpg" id="profile_img" alt="Profile" />
+      <img
+        src="images/IMG_20220327_131117_728 (2).jpg"
+        id="profile_img"
+        alt="Profile"
+      />
 
-      <h1>_kingaustinn</h1>
+      <h1 className="username">_kingaustinn</h1>
       <h2 id="slack">Austin</h2>
     </header>
+  );
+};
 
-  )
-}
-
-export default Header
+export default Header;
