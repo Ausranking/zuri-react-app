@@ -3,29 +3,27 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 :root {
   --default-font: "Inter", sans-serif;
   --main-col: #eaecf0;
 }
 
-.App {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-h1 {
+.username {
   font-family: var(--default-font);
-  font-size:20px;
+  margin: 0 auto;
+  font-size: 20px;
   font-weight: 700;
 }
-h2 {
-  display:none;
+
+#slack {
+  display: none;
 }
 
 .container {
   width: 100%
 }
+
 .social_links {
   display: flex;
   gap: 24px;
@@ -34,16 +32,21 @@ h2 {
   align-items: center;
 }
 
-@media (max-width: 768px) {
+/* @media () */
+
+/* for small screen devices */
+@media (max-width: 480px) {
   .container {
-    width: 375px;
+    width: 100%;
   }
+
   .btn {
-    width: 343px;
+    max-width: 343px;
   }
+
   footer {
-    margin:0 10px;
-    width: 343px;
+    border: 2px solid red;
+    max-width: 343px;
     height: 196px;
     display: flex;
     flex-direction: column;
@@ -51,18 +54,21 @@ h2 {
   }
 }
 
-
+/* For smaller screen devices like iphone 4  */
 @media (max-width: 320px) {
   .container {
-    width: 350px; 
-   }
-   .profile-section {
+    max-width: 350px;
+  }
+
+  .profile-section {
     width: 100%;
-   }
-   footer {
-    width: 300px;
-   }
+  }
+
+  footer {
+    max-width: 300px;
+  }
+
   .btn {
-    width: 300px;
+    max-width: 300px;
   }
 }
