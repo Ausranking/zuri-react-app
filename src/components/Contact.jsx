@@ -26,7 +26,7 @@ function Contact() {
       lastnameError.innerText = 'lastname cannot be empty'
       emailError.innerText = 'please enter an email'
       messageError.innerText = 'please enter a message'
-
+// coment to pull
 
       firstnameError.style.color = 'red'
       firstname.style.border = '1px solid red'
