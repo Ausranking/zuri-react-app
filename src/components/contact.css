@@ -41,9 +41,10 @@ input:focus {
 }
 
 #first_name,
-#last_name {
+#last_name, #email {
     width: 348px;
     padding: 10px 14px;
+    height: 44px;
 }
 
 ::placeholder {
