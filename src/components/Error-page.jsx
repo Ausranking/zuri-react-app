@@ -11,8 +11,7 @@ function Error() {
                 <h1 className='head'>We can't find that page</h1>
                 <p className='error-par'>sorry, the page you are looking for doesn't exist</p>
                 <div className="quick-btns">
-                    <Button img={'btn-icon.png'} text="Go Back" 
-                    link="/contact" id="back_btn" />
+                    <Button text="Go Back" link="/contact" id="back_btn" />                        
                     <Button text="Take me home" link="/" id="home_btn" />
 
                 </div>
