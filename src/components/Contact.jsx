@@ -26,6 +26,7 @@ function Contact() {
       emailError.innerText = 'please enter an email'
       messageError.innerText = 'please enter a message'
 
+
       firstnameError.style.color = 'red'
       firstname.style.border = '1px solid red'
       lastnameError.style.color = 'red'
