@@ -3,9 +3,8 @@ import Footer from './Footer'
 import './contact.css'
 
 
-function Contact() {  
-  const handleSubmit = () => {    
-    // e.preventDefault()
+function Contact() {
+  const handleSubmit = (e) => {
     const firstname = document.getElementById('first_name')
     const lastname = document.getElementById('last_name')
     const email = document.getElementById('email')
@@ -14,18 +13,21 @@ function Contact() {
     const lastnameError = document.getElementById('lastname_error')
     const emailError = document.getElementById('email_error')
     const messageError = document.getElementById('message_error')
-    
-    
-    
+
+
+
     const form = document.forms['form']
-    ['firstname'].value
+    ['firstname' &&'lastname' && 'email' && 'message'].value
     if (form == "") {
+      e.preventDefault()
+      //prevents submit if fields are empty but redirets to error-page if fields are filled out
+
       firstnameError.innerText = 'Firstname cannot be empty'
       lastnameError.innerText = 'lastname cannot be empty'
       emailError.innerText = 'please enter an email'
       messageError.innerText = 'please enter a message'
-      
-      
+
+
       firstnameError.style.color = 'red'
       firstname.style.border = '1px solid red'
       lastnameError.style.color = 'red'

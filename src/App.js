@@ -2,7 +2,7 @@ import "./app.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
-import Error from "./components/404";
+import Error from "./components/Error-page";
 
 function App() {
   return (
