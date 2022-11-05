@@ -1,9 +1,11 @@
-import React from 'react'
+import { useState } from 'react';
 import Footer from './Footer'
 import './contact.css'
 
 
 function Contact() {
+
+  
   const handleSubmit = (e) => {
     const firstname = document.getElementById('first_name')
     const lastname = document.getElementById('last_name')
@@ -13,20 +15,16 @@ function Contact() {
     const lastnameError = document.getElementById('lastname_error')
     const emailError = document.getElementById('email_error')
     const messageError = document.getElementById('message_error')
-
-
-
     const form = document.forms['form']
-    ['firstname' &&'lastname' && 'email' && 'message'].value
+    ['firstname' && 'lastname' && 'email' && 'message'].value
     if (form == "") {
       e.preventDefault()
       //prevents submit if fields are empty but redirets to error-page if fields are filled out
 
-      firstnameError.innerText = 'Firstname cannot be empty'
-      lastnameError.innerText = 'lastname cannot be empty'
+      firstnameError.innerText = 'please enter firstname'
+      lastnameError.innerText = 'please enter lastname'
       emailError.innerText = 'please enter an email'
       messageError.innerText = 'please enter a message'
-
 
       firstnameError.style.color = 'red'
       firstname.style.border = '1px solid red'
@@ -50,32 +48,37 @@ function Contact() {
 
         <form action="*" className='form' id='form' onSubmit={handleSubmit}>
           <div className="flex">
-            <label htmlFor='first_name'>
-              First name <br />
-              <input type="Text" name="firstname" id='first_name' placeholder='Enter your first name' />
-              <small id='firstname_error'></small>
-            </label>
 
-            <label htmlFor="last_name">
-              Last name <br />
+            <div className='form-group'>
+              <label htmlFor='first_name' >First name</label>
+              <br />
+              <input type="Text" name="firstname" id='first_name' placeholder='Enter your first name' />
+
+              <small id='firstname_error'></small>
+            </div>
+
+            <div className='form-group'>
+              <label htmlFor="last_name">Last name</label>
+              <br />
               <input type="text" name='lastname' id='last_name' placeholder='Enter your last name' />
               <small id='lastname_error'></small>
-            </label>
+            </div>
+
           </div>
 
-          <label htmlFor="email">
-            Email<br />
-            <input type="text" name='email' id='email' placeholder='yourname@email.com' />
+          <div className='form-group'>
+            <label htmlFor="email">Email</label> <br />
+            <input type="email" name='email' id='email' placeholder='yourname@email.com' />
             <small id='email_error'></small>
-          </label> <br />
+          </div>
 
-          <label htmlFor="message">
-            Message <br />
-            <textarea name="message" id="message" cols="80" rows="10"
-              placeholder="Send me a message and I'll reply you as soon a possible..."></textarea>
-            <small id='message_error'></small>
-          </label> <br />
-
+          <div className='form-group'>
+            <label htmlFor="message">Message</label>
+            <br />
+            <textarea name="message" id="message" cols="80" rows="10" placeholder="Send me a message and I'll reply you as soon a possible..."></textarea>
+            <small id='message_error' ></small>
+          </div>
+          
           <label htmlFor="tc" className='tc'>
             <input type="checkbox" id='tc' />
             You agree to providing your data to <strong>Austin</strong> who may contact you .
