@@ -8,9 +8,9 @@
   align-items: center;
 }
 #profile_img {
-  width: 88px;
-  height: 88px;
-  border-radius: 275px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 .icon #web-icon {
   position: absolute;

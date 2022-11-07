@@ -16,7 +16,7 @@ const Header = () => {
         />
       </div>
       <img
-        src="public\images\IMG-20221106-WA0015.jpg"
+        src="images\IMG-20221106-WA0015.jpg"
         id="profile_img"
         alt="Profile"
       />
